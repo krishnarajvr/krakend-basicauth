@@ -5,14 +5,14 @@ HTTP Basic authentication middleware for the [KrakenD-CE](https://github.com/dev
 
 ## Install and test
 ```bash
-git clonehttps://github.com/devopsfaith/krakend-ce.git
+git clone https://github.com/devopsfaith/krakend-ce.git
 cd krakend-ce
 
 #Modify handler_factory.go
-#Add to imports: basicauth "github.com/azubkokshe/krakend-basicauth/gin"
+#Add to imports: basicauth "github.com/krishnarajvr/krakend-basicauth/gin"
 #Add to NewHandlerFactory (before "return handlerFactory"): handlerFactory = basicauth.New(handlerFactory, logger)
 
-got get github.com/azubkokshe/krakend-basicauth/gin
+got get github.com/krishnarajvr/krakend-basicauth/gin
 
 make build
 
@@ -46,7 +46,7 @@ curl --user test:123456 http://localhost:8080/supu
             "Content-Type"
          ],
          "extra_config":{
-            "github_com/azubkokshe/krakend-basicauth":{
+            "github_com/krishnarajvr/krakend-basicauth":{
                "username":"test",
                "password":"123456"
             }

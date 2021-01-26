@@ -3,12 +3,12 @@ package gin
 import (
 	"net/http"
 
-	"github.com/azubkokshe/krakend-basicauth"
 	"github.com/devopsfaith/krakend/config"
 	"github.com/devopsfaith/krakend/logging"
 	"github.com/devopsfaith/krakend/proxy"
 	krakendgin "github.com/devopsfaith/krakend/router/gin"
 	"github.com/gin-gonic/gin"
+	basicauth "github.com/krishnarajvr/krakend-basicauth"
 )
 
 func Register(cfg config.ServiceConfig, l logging.Logger, engine *gin.Engine) {
